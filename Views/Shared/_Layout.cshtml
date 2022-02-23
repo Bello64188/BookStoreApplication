@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BookStoreApplication</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <environment include="Development">
+        <link href="~/css/styleLayout.css" rel="stylesheet" />
+        <link href="~/css/ListStyle.css" rel="stylesheet" />
+        <link href="~/lib/font-awesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="~/lib/font-awesome/css/regular.min.css" rel="stylesheet" />
+        <link href="~/lib/font-awesome/css/solid.min.css" rel="stylesheet" />
+    </environment>
+
+</head>
+
+
+<body>
+   
+    <div class="container ">
+        <nav class="nav  MyNav">
+
+            <ul>
+                <li><a href="#" id="check"><i class="fas fa-home"> <span>Home</span></i></a></li>
+                <li><a  asp-controller="Book" asp-action="List" id="check"><i class="fas fa-book-open"> <span>Book</span></i></a></li>
+                <li><a asp-controller="Author" asp-action="List" id="check"><i class="fas fa-leaf"> <span>Authors</span></i></a></li>
+
+            </ul>
+            <ul class="division">
+                <li><a href="#" id="check"><i class="fas fa-cart-shopping"><span>Cart</span></i><span class="badge badge-light ml-2">2</span></a></li>
+                <li><a href="#"id="check"><i class="fas fa-pen-to-square"> <span>Register</span></i></a></li>
+                <li><a asp-area="Admin" asp-controller="Admin" asp-action="Index" id="check"><i class="fas fa-tools"> <span>Admin</span></i></a></li>
+            </ul>
+
+
+        </nav>
+        <div class="jumbotron  jumbotron-fluid">
+            <div class="workonblock">
+                <div class=""> <h1 class="nameBook">Oxford Book</h1></div>
+                <div>  <img src="~/Image/images.jpeg" title="Oxford Book" class="myimg ml-4" /> </div>
+            
+            </div>
+            
+        </div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - BookStoreApplication - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

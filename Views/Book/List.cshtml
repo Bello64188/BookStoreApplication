@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewData["Title"] = "List";
+}
+
+<div class="container w-75">
+    <h1 class="ListH1">Book Catelog</h1>
+    
+    <form action="/" method="post">
+        @*filter Row*@
+        <div class="row">
+            <div class="col-4  FirstRow ">
+                <p>Author:</p>
+                <select   class="form-control">
+                    <option value="value">All</option>
+                </select>
+
+
+            </div>
+            <div class="col-3 FirstRow">
+                <p>Genre:</p>
+                <select class="form-control">
+                    <option value="value">All</option>
+                </select>
+            </div>
+            <div class="col-3 FirstRow">
+                <p>Price:</p>
+                <select class="form-control">
+                    <option value="value">All</option>
+                </select>
+            </div>
+            <div class="col-2">
+                <button type="submit" class="btn btn-sm btn-primary">Filter</button>
+                <a href="#" class="btn btn-sm btn-primary">Clear</a>
+            </div>
+        </div>
+    </form>
+   @*tables division*@
+<table class="table  table-sm table-striped mt-2 table-bordered ">
+    <thead class="bg-dark">
+        <tr>
+            <td class="col-3 head">Title</td>
+            <td class="col-3 head">Author(s)</td>
+            <td class="col-2 head">Genre</td>
+            <td class="col-2 head">Price</td>
+            <td></td>
+        </tr> 
+    </thead>
+    <tbody>
+        <tr>
+            <td class="changeColor">Title</td>
+            <td class="changeColor">Author</td>
+            <td>Genre</td>
+            <td>@($"{33:c}")</td>
+            <td><button type="button" class="btn btn-sm btn-primary">Add To Cart</button></td>
+        </tr>
+    </tbody>
+    
+</table>
+    <nav aria-label="Search  Book">
+        <ul class="pagination pagination-sm">
+            <li class="page-item ">
+                <a href="#" class="btn btn-outline-primary active">1</a>
+            </li>
+            <li class="page-item ">
+                <a href="#" class="btn btn-outline-primary ">2</a>
+            </li>
+            <li class="page-item ">
+                <a href="#" class="btn btn-outline-primary ">3</a>
+            </li>
+            <li class="page-item ">
+                <a href="#" class="btn btn-outline-primary ">4</a>
+            </li>
+            <li class="page-item ">
+                <a href="#" class="btn btn-outline-primary ">5</a>
+            </li>
+            <li class="page-item ">
+                <a href="#" class="btn btn-outline-primary ">6</a>
+            </li>
+        </ul>
+
+    </nav>
+    
+</div>
+
+

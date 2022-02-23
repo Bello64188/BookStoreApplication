@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    
+
+}
+
+<div>
+    <h1 class="ListH1">Manage Book</h1>
+    <div class="border">
+        <div class="ml-3">
+            <a href="#"><h5>Add a book</h5></a>
+
+        </div>
+        <hr />
+        <form action="/" method="post">
+            <div class="row">
+                <div class="col-2 ml-3"><h5>Find a Book</h5></div>
+                <div class="col-4 FirstRow">Search Terms: <input type="text" class=" form-control-sm ml-3" /></div>
+                <div class="col-4 FirstRow">
+                    Search By:
+                    <div class=" FirstRow">
+                        <div class="form-check ml-2">
+                            <input type="checkbox" class="form-check-input" />
+                            <label class="form-check-label">Title</label>
+                        </div>
+
+                        <div class="form-check ml-2">
+                            <input type="checkbox" class="form-check-input" />
+                            <label class="form-check-label">Author</label>
+
+                        </div>
+                        <div class="form-check ml-2">
+                            <input type="checkbox" class="form-check-input" />
+                            <label class="form-check-label">Genre</label>
+                        </div>
+
+
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-sm btn-primary mb-2">Find</button>
+
+            </div>
+        </form>
+        
+    </div>
+</div>

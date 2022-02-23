@@ -1,0 +1,31 @@
+﻿body {
+}
+.ListH1{
+    color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:25px;
+}
+.FirstRow{
+   display:flex;
+   flex-direction:row;
+}
+.AdjustSelect{
+    height:10px;
+    width:5em;
+}
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size:small;
+    margin-right:3px;
+}
+.head {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+}
+.changeColor {
+    color:steelblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
